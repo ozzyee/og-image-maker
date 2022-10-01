@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
+import Background from "../components/atoms/Background/Background.component";
 
 const Home: NextPage = () => {
 
   return (
-    <div className={styles.container}>
-      <h1>test</h1>
-    </div>
+    <Background>
+      <h1>hello</h1>
+    </Background>
   )
 }
 
