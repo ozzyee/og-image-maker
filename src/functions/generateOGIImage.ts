@@ -6,7 +6,7 @@ export const generateOGIImage = async () => {
       args: ['--no-sandbox']
     });
     const page = await browser.newPage();
-    await page.goto("http://google.com");
+    await page.goto("http://localhost:3000");
     await page.setViewport({ width: 2048, height: 1170 });
     const image = await page.screenshot();
 

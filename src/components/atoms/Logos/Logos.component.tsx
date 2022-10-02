@@ -1,7 +1,9 @@
-export default function Logos({ isDarkTheme }: LogosProps) {
-  return isDarkTheme ? <img src={"/logos/stockora-black.svg"}/> : <img src={"/logos/stockora.svg"}/>
+export default function Logos({ isDarkTheme, className }: LogosProps) {
+  return isDarkTheme ? <img className={className} src={"/logos/stockora.svg"}/> :
+    <img className={className} src={"/logos/stockora-black.svg"}/>
 }
 
 type LogosProps = {
   isDarkTheme: boolean
+  className?: string
 }

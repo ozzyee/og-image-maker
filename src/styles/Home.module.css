@@ -127,3 +127,11 @@
     }
 }
 
+.imgTemp {
+    border: 1px solid green;
+    position: absolute;
+    width: 110vw;
+    top: 0;
+    z-index: 1;
+}
+

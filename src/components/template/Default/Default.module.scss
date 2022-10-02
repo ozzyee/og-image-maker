@@ -1,0 +1,20 @@
+.logoWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12%;
+  z-index: 1000;
+}
+
+.logo {
+  width: 57%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  border: 2px solid red;
+  z-index: 10000;
+}

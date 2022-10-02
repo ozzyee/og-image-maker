@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
-import Background from "../components/atoms/Background/Background.component";
+import HoldingsLayout from "../components/layout/Holdings/Holdings.layout";
+import style from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
-
   return (
-    <Background>
-      <h1>hello</h1>
-    </Background>
+    <>
+      <HoldingsLayout/>
+    </>
   )
 }
 
