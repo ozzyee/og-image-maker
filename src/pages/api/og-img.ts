@@ -10,7 +10,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const url = req.headers.host
-  const _url = url?.includes('localhost') ? `http://${url}/` : `https://${url}/`;
+  const _url = `https://${url}/`;
 
   const file = await generateOGIImage(_url)
   res.setHeader('Content-Type', `image/png`);
