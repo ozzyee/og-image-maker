@@ -9,8 +9,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  console.log({ req })
   const url = req.headers.host
-  const _url = `https://${url}/`;
+  const _url = `http://${url}/`;
   console.log({ _url })
 
   const file = await generateOGIImage(_url)
