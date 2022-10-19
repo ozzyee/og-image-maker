@@ -11,7 +11,7 @@ export default async function handler(
 ) {
   console.log({ req })
   const url = req.headers.host
-  const _url = `http://${url}/`;
+  const _url = `https://${url}/`;
   console.log({ _url })
 
   const file = await generateOGIImage(_url)
