@@ -9,7 +9,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log({ req })
   const url = req.headers.host
   const _url = `https://${url}/`;
   console.log({ _url })
