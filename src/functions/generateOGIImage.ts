@@ -1,9 +1,9 @@
-import puppeteer from "puppeteer";
 import chromium from "chrome-aws-lambda";
 
 export const generateOGIImage = async (_url: string) => {
   try {
     const browser = await chromium.puppeteer.launch({
+      ignoreDefaultArgs: ['--disable-extensions'],
       executablePath: await chromium.executablePath,
     });
     const page = await browser.newPage();
